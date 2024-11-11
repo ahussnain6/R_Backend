@@ -29,7 +29,7 @@ const getEmail =async(req,res)=>{
       var mailOptions = {
     from: {
         name:"VelExcel Technologies",
-        address:'velexceltechnologies@gmail.com',
+        address:'connect@velexceltechnologies.online',
         
     },
     to: `${email}`,
