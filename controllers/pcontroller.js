@@ -25,7 +25,7 @@ const getEmail = async (req, res) => {
     user: process.env.USEREMAIL,
     pass: process.env.USERPASSWORD,
   },
-  timeout: 30000,  // Set to 30 seconds or more
+  timeout: 60000,  // Set to 30 seconds or more
 });
     const info = await transporter.sendMail(mailOptions);
  var mailOptions = {
