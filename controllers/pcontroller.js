@@ -11,7 +11,6 @@ const EnterMessage = async(req,res)=>{
         console.log(error);
     }
 }
-
 const getEmail = async (req, res) => {
   const { email } = req.body;
   try {
@@ -24,8 +23,7 @@ const getEmail = async (req, res) => {
   auth: {
     user: process.env.USEREMAIL,
     pass: process.env.USERPASSWORD,
-  },
-  timeout: 60000,  // Set to 30 seconds or more
+  }
 });
     const info = await transporter.sendMail(mailOptions);
  var mailOptions = {
