@@ -16,17 +16,17 @@ const getEmail = async (req, res) => {
   const { email } = req.body;
   try {
     const Emailentry = await Email.create({ email });
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-         host: "smtp.gmail.com",
-         port: 587,
-         secure: false,
-         auth: {
-           user: process.env.USEREMAIL,
-           pass: process.env.USERPASSWORD,
-         },
-      timeout: 10000,  // Timeout setting
-    });
+   const transporter = nodemailer.createTransport({
+  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: process.env.USEREMAIL,
+    pass: process.env.USERPASSWORD,
+  },
+  timeout: 30000,  // Set to 30 seconds or more
+});
     const info = await transporter.sendMail(mailOptions);
  var mailOptions = {
         from: {
