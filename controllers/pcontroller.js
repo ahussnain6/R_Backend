@@ -33,12 +33,12 @@ const EnterMessage = async(req,res)=>{
     // Define the email options
     const mailOptions = {
       from: {
-        name: 'VelExcel Technologies',
+        name: 'VelExcel Solutions',
         address: process.env.USEREMAIL,
       },
       to: email,
-      subject: 'Unlock Your Potential with Velexcel Technologies',
-      text: `Dear Valued Partner,\n\nWelcome to VelExcel Technologies, where innovation meets excellence! We're thrilled to have you on board as we embark on a journey to transform your digital landscape.\n\nIn today's fast-paced world, staying ahead of the competition is crucial. Our cutting-edge IT solutions are designed to empower your business, streamline operations, and elevate your success. Whether it's cloud computing, cybersecurity, or custom software development, we are committed to delivering exceptional value tailored to your unique needs.\n\nJoin us as we harness the power of technology to unlock new possibilities and drive growth. Stay tuned for insights, updates, and exclusive offers that will keep you at the forefront of your industry.\n\nThank you for choosing VelExcel Technologies—where your vision becomes reality!\n\nBest regards,\nThe VelExcel Technologies Team`,
+      subject: 'Unlock Your Potential with Velexcel Solutions',
+      text: `Dear Valued Partner,\n\nWelcome to VelExcel Solutions, where innovation meets excellence! We're thrilled to have you on board as we embark on a journey to transform your digital landscape.\n\nIn today's fast-paced world, staying ahead of the competition is crucial. Our cutting-edge IT solutions are designed to empower your business, streamline operations, and elevate your success. Whether it's cloud computing, cybersecurity, or custom software development, we are committed to delivering exceptional value tailored to your unique needs.\n\nJoin us as we harness the power of technology to unlock new possibilities and drive growth. Stay tuned for insights, updates, and exclusive offers that will keep you at the forefront of your industry.\n\nThank you for choosing VelExcel Technologies—where your vision becomes reality!\n\nBest regards,\nThe VelExcel Technologies Team`,
     };
 
     // Send the email
