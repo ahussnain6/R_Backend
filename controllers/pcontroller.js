@@ -8,7 +8,7 @@ const EnterMessage = async(req,res)=>{
         const Messageentry = await Message.create({ name,email,message });
         return res.status(201).json({  "POST":"ok"  });   
     } catch (error) {
-        console.log(error);
+        // console.log(error);
     }
 } 
    const getEmail = async (req, res) => {
@@ -45,17 +45,18 @@ const EnterMessage = async(req,res)=>{
     const info = await transporter.sendMail(mailOptions);
     
     // Log the email response
-    console.log('Email sent: ' + info.response);
+    // console.log('Email sent: ' + info.response);
     
     // Send success response
     return res.send({ Status: 'Success' });
 
   } catch (error) {
     // Log any error that occurred
-    console.error('Error sending email:', error);
+    // console.error('Error sending email:', error);
     // Send error response
     return res.status(500).send({ Status: 'Error', Message: 'Failed to send email.' });
   }
 };
      
 module.exports = {getEmail,EnterMessage};
+
