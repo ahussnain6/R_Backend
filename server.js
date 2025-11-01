@@ -23,11 +23,12 @@ app.get("/", (req, res) => {
 dbConnect()
   .then(() => {
     app.listen(port, () => {
-      console.log(`Server is listening at Port ${port}`);
+      // console.log(`Server is listening at Port ${port}`);
     });
   })
   .catch(err => {
-    console.error("Database connection error:", err);
+    // console.error("Database connection error:", err);
   });
+
 
 module.exports = app;
